@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'helvetica53';
+	src: url('fonts/helvetica-53.ttf');
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 400;
+	background-color: rgb(246, 246, 246);
+}
+
+img {
+	width: 99%;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2em;
+	margin-top: 2em;
+	overflow: auto;
+}
+
+.grid-item {
+	flex-grow: 1;
+	width: 25%;
+	height: auto;
+	padding-bottom: 16px;
+}
+
+.intro-wrapper {
+	display: flex;
+	/*background-color: pink;*/
+	margin: 2em;
+}
+
+.right {
+	flex: 5;
+	margin-right: 16px;
+}
+
+.left {
+	flex: 3;
+}
+
+h1 {
+	font-size: 54px;
+	margin: 0;
+	font-family: 'helvetica53', sans-serif;
+}
+
+h5 {
+	margin: 16px 0 8px 0;
+}
+
+p, caption {
+	font-size: 0.5rem;
+	margin: 0;
+}
+
+@media screen and (max-width: 875px) {
+  .grid-item {
+  	width: 50%;
+  }
+
+  .intro-wrapper {
+  	display: block;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .grid-item {
+  	width: 100%;
+  }
+
+  .intro-wrapper {
+  	display: block;
+  }
+}
